@@ -149,8 +149,8 @@ function addEmployee() {
       var managerId = selectManager().indexOf(val.choice) + 1
       connection.query("INSERT INTO employee SET ?", 
       {
-          first_name: val.firstName,
-          last_name: val.lastName,
+          first_name: val.firstname,
+          last_name: val.lastname,
           manager_id: managerId,
           role_id: roleId
           
